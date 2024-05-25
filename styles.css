@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #151414;
+    color: #447F9C;
+}
+
+
+
+nav {
+    background-color: #323234; /* Background color for the navbar */
+    padding: 0; /* Reset padding */
+    display: flex;
+    justify-content: space-between; /* Align content on both ends */
+    height: 100px; /* Set navbar height */
+    align-items: center; /* Vertically center items */
+    position: fixed; /* Fixed position */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    right: 0; /* Align to the right */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 20px;
+}
+
+nav ul li {
+    margin: 10px;
+    display: inline;
+    margin-right: 20px;
+    display: inline-block;
+    /*border: 3px solid #333; */
+    border-radius: 5px;
+    /* Add border around each navbar section */
+}
+
+nav ul li a {
+
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #729DB5;
+    background-image: #729DB5
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: filter 0.3s;
+    border: 3px;
+    border-color: white; /* Smooth transition for filter effect */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Change background color on hover */
+    filter: invert(50%); /* Invert colors on hover */
+}
+
+main {
+    padding: 20px;
+    display: flex:
+    fl: wrap;
+    justify-content: center
+}
+
+footer {
+    background-color: #323234;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.landing {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#landing {
+    text-align: center;
+    padding: 100px 0;
+    display: flex;
+}
+
+.logo img {
+    margin: 20px;
+    width: 101px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+}
+
+.fade {
+    animation: fadeEffect 1.5s ease-in-out infinite;
+}
+
+@keyframes fadeEffect {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.landing h1{
+    font-size: 5rem
+}
+#landing h1{
+    align-self: center;
+    font-size: 5rem;
+    flex-direction: column;
+}
+.landing h2 {
+    text-align:center justify;
+    color:#729DB5;
+    text-transform: uppercase;
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 2rem;
+}
+
+.container {
+    padding: 2rem
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x:hidden;
+    scroll-snap-type:mandatory;
+    scroll-behavior:smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    border-radius: 0.5rem;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+
+.card {
+    width: 30rem; /* Card width */
+    padding: 20px; /* Padding inside card */
+    margin: 20px; /* Margin between cards */
+    background-color: #2b414f; /* Card background color */
+    border-radius: 10px; /* Card border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    display: inline-block;
+    
+    
+}
+
+
+.btn{
+    color: black;
+    text-decoration: none;
+    padding-left: 6rem;
+    padding-top: 10px;
+    background-color: #151414;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 700;
+    transition: filter 0.3s; /* Smooth transition for filter effect */
+
+}
+
+.btn:hover {
+    background-color: #2B414F; /* Change background color on hover */
+    filter: invert(50%); /* Invert colors on hover */
+}
+
